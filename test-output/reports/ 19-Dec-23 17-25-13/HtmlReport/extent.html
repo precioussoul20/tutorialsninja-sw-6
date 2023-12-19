@@ -1,0 +1,2534 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Extent Report</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report dark">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Tutorials Ninja</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Dec 19, 2023 05:25:13 pm</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Dec 19, 2023 05:25:13 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Dec 19, 2023 05:27:56 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>0</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>4</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'>
+<b>0</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='100%'><b>4</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'><b>0</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='100%'><b>16</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='26%'><b>46</b> steps passed</small></div>
+<div>
+<small data-tooltip='9%'><b>16</b> steps failed,
+<b>111</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Desktop page test cases":68.495,"Laptops and Notebook page test cases":7.955,"User Accounts test cases":48.458,"Verify user should navigate to the pages successfully":38.187
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@regression</td>
+<td>0</td>
+<td>12</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@smoke</td>
+<td>0</td>
+<td>16</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@author-Priya</td>
+<td>0</td>
+<td>16</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@sanity</td>
+<td>0</td>
+<td>12</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>Engineer</td>
+<td>Tester</td>
+</tr>
+<tr>
+<td>Project</td>
+<td>TutorialsNinja</td>
+</tr>
+<tr>
+<td>os</td>
+<td>Windows</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 0,
+failParent: 4,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 16,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 46,
+failGrandChild: 16,
+warningGrandChild: 0,
+skipGrandChild: 111,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script><div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@regression</a><a class="dropdown-item" href="#">@smoke</a><a class="dropdown-item" href="#">@author-Priya</a><a class="dropdown-item" href="#">@sanity</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Desktop page test cases</p>
+            <p class="text-sm">
+              <span>17:25:13</span> / <span>00:01:08:495</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Desktop page test cases</h5>
+<span class='badge badge-success'>12.19.2023 17:25:13</span>
+<span class='badge badge-danger'>12.19.2023 17:26:22</span>
+<span class='badge badge-default'>00:01:08:495</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>verify product arranged in alphabetical order</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.tutorialsninja.steps.TopMenuSteps.iAmOnTheHomepage()">
+                <span>Given I am on the homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.steps.TopMenuSteps.iHoverOnTheDesktopsTabAndClick()">
+                <span>And I hover on the Desktops tab and click</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.tutorialsninja.steps.DesktopsSteps.clickOn(java.lang.String)">
+                <span>And click on "Show AllDesktops"</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.ClassCastException: class jdk.proxy2.$Proxy28 cannot be cast to class org.openqa.selenium.By (jdk.proxy2.$Proxy28 is in module jdk.proxy2 of loader 'app'; org.openqa.selenium.By is in unnamed module of loader 'app')
+	at com.tutorialsninja.pages.HomePage.selectMenu(HomePage.java:58)
+	at com.tutorialsninja.steps.DesktopsSteps.clickOn(DesktopsSteps.java:14)
+	at ✽.click on "Show AllDesktops"(file:///C:/Users/pjeth/IdeaProjects/tutorialsninja-sw-6/src/test/resources/features/desktopstest.feature:8)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.steps.DesktopsSteps.selectSortByPosition(java.lang.String)">
+                <span>And select sort by position "Name: Z to A"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.steps.DesktopsSteps.iCanSeeTheProductsInDescendingOrder()">
+                <span>Then I can see the products in descending order</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>com.tutorialsninja.steps.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>verify product arranged in alphabetical order
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded1.png' src="../screenshots/embedded1.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="10"><span class="badge log fail-bg mr-2">Fail</span>verify product arranged in alphabetical order</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="scenario_outline ">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="11"><span class="badge log fail-bg mr-2">Fail</span>verify product arranged in alphabetical order</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given I am on the homepage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I hover on the Desktops tab and click</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>And click on "Show AllDesktops"</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.ClassCastException: class jdk.proxy2.$Proxy28 cannot be cast to class org.openqa.selenium.By (jdk.proxy2.$Proxy28 is in module jdk.proxy2 of loader 'app'; org.openqa.selenium.By is in unnamed module of loader 'app')
+	at com.tutorialsninja.pages.HomePage.selectMenu(HomePage.java:58)
+	at com.tutorialsninja.steps.DesktopsSteps.clickOn(DesktopsSteps.java:14)
+	at ✽.click on "Show AllDesktops"(file:///C:/Users/pjeth/IdeaProjects/tutorialsninja-sw-6/src/test/resources/features/desktopstest.feature:16)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And select sort by the position "Name: A to Z"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And select product 'HTC'</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the text 'HTC'</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And enter qty 1 using select class</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And click on 'Add to Cart' button</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the text "Success: You have added 'HTC' to your shopping cart!"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I click on link 'shopping cart' display into success message</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the text 'Shopping Cart'</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the Product name 'HTC'</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the Model 'Touch HD'</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the Total 'Product 1 £74.73'</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.tutorialsninja.steps.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>verify product arranged in alphabetical order
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded2.png' src="../screenshots/embedded2.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="28"><span class="badge log fail-bg mr-2">Fail</span>verify product arranged in alphabetical order</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given I am on the homepage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I hover on the Desktops tab and click</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>And click on "Show AllDesktops"</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.ClassCastException: class jdk.proxy2.$Proxy28 cannot be cast to class org.openqa.selenium.By (jdk.proxy2.$Proxy28 is in module jdk.proxy2 of loader 'app'; org.openqa.selenium.By is in unnamed module of loader 'app')
+	at com.tutorialsninja.pages.HomePage.selectMenu(HomePage.java:58)
+	at com.tutorialsninja.steps.DesktopsSteps.clickOn(DesktopsSteps.java:14)
+	at ✽.click on "Show AllDesktops"(file:///C:/Users/pjeth/IdeaProjects/tutorialsninja-sw-6/src/test/resources/features/desktopstest.feature:16)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And select sort by the position "Name: A to Z"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And select product 'iPhone'</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the text 'iPhone'</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And enter qty 1 using select class</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And click on 'Add to Cart' button</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the text "Success: You have added 'iPhone' to your shopping cart!"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I click on link 'shopping cart' display into success message</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the text 'Shopping Cart'</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the Product name 'iPhone'</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the Model 'product 11'</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the Total '£75.46'</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.tutorialsninja.steps.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>verify product arranged in alphabetical order
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded3.png' src="../screenshots/embedded3.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="45"><span class="badge log fail-bg mr-2">Fail</span>verify product arranged in alphabetical order</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given I am on the homepage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I hover on the Desktops tab and click</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>And click on "Show AllDesktops"</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.ClassCastException: class jdk.proxy2.$Proxy28 cannot be cast to class org.openqa.selenium.By (jdk.proxy2.$Proxy28 is in module jdk.proxy2 of loader 'app'; org.openqa.selenium.By is in unnamed module of loader 'app')
+	at com.tutorialsninja.pages.HomePage.selectMenu(HomePage.java:58)
+	at com.tutorialsninja.steps.DesktopsSteps.clickOn(DesktopsSteps.java:14)
+	at ✽.click on "Show AllDesktops"(file:///C:/Users/pjeth/IdeaProjects/tutorialsninja-sw-6/src/test/resources/features/desktopstest.feature:16)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And select sort by the position "Name: A to Z"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And select product 'iPod Classic'</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the text 'iPod Classic'</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And enter qty 1 using select class</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And click on 'Add to Cart' button</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the text "Success: You have added 'iPod Classic' to your shopping cart!"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I click on link 'shopping cart' display into success message</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the text 'Shopping Cart'</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the Product name 'iPod Classic'</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the Model 'product 20'</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the Total '£74.73'</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.tutorialsninja.steps.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>verify product arranged in alphabetical order
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded4.png' src="../screenshots/embedded4.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="62"><span class="badge log fail-bg mr-2">Fail</span>verify product arranged in alphabetical order</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given I am on the homepage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I hover on the Desktops tab and click</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>And click on "Show AllDesktops"</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.ClassCastException: class jdk.proxy2.$Proxy28 cannot be cast to class org.openqa.selenium.By (jdk.proxy2.$Proxy28 is in module jdk.proxy2 of loader 'app'; org.openqa.selenium.By is in unnamed module of loader 'app')
+	at com.tutorialsninja.pages.HomePage.selectMenu(HomePage.java:58)
+	at com.tutorialsninja.steps.DesktopsSteps.clickOn(DesktopsSteps.java:14)
+	at ✽.click on "Show AllDesktops"(file:///C:/Users/pjeth/IdeaProjects/tutorialsninja-sw-6/src/test/resources/features/desktopstest.feature:16)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And select sort by the position "Name: A to Z"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And select product 'MacBook'</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the text 'MacBook'</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And enter qty 1 using select class</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And click on 'Add to Cart' button</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the text "Success: You have added 'MacBook' to your shopping cart!"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I click on link 'shopping cart' display into success message</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the text 'Shopping Cart'</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the Product name 'MacBook'</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the Model 'Product 16'</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the Total '£368.73'</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.tutorialsninja.steps.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>verify product arranged in alphabetical order
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded5.png' src="../screenshots/embedded5.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="79"><span class="badge log fail-bg mr-2">Fail</span>verify product arranged in alphabetical order</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given I am on the homepage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I hover on the Desktops tab and click</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>And click on "Show AllDesktops"</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.ClassCastException: class jdk.proxy2.$Proxy28 cannot be cast to class org.openqa.selenium.By (jdk.proxy2.$Proxy28 is in module jdk.proxy2 of loader 'app'; org.openqa.selenium.By is in unnamed module of loader 'app')
+	at com.tutorialsninja.pages.HomePage.selectMenu(HomePage.java:58)
+	at com.tutorialsninja.steps.DesktopsSteps.clickOn(DesktopsSteps.java:14)
+	at ✽.click on "Show AllDesktops"(file:///C:/Users/pjeth/IdeaProjects/tutorialsninja-sw-6/src/test/resources/features/desktopstest.feature:16)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And select sort by the position "Name: A to Z"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And select product 'MacBook Air'</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the text 'MacBook Air'</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And enter qty 1 using select class</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And click on 'Add to Cart' button</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the text "Success: You have added 'MacBook Air' to your shopping cart!"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I click on link 'shopping cart' display into success message</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the text 'Shopping Cart'</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the Product name 'MacBook Air'</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the Model 'Product 17'</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the Total '£736.23'</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.tutorialsninja.steps.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>verify product arranged in alphabetical order
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded6.png' src="../screenshots/embedded6.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="96"><span class="badge log fail-bg mr-2">Fail</span>verify product arranged in alphabetical order</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given I am on the homepage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I hover on the Desktops tab and click</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>And click on "Show AllDesktops"</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.ClassCastException: class jdk.proxy2.$Proxy28 cannot be cast to class org.openqa.selenium.By (jdk.proxy2.$Proxy28 is in module jdk.proxy2 of loader 'app'; org.openqa.selenium.By is in unnamed module of loader 'app')
+	at com.tutorialsninja.pages.HomePage.selectMenu(HomePage.java:58)
+	at com.tutorialsninja.steps.DesktopsSteps.clickOn(DesktopsSteps.java:14)
+	at ✽.click on "Show AllDesktops"(file:///C:/Users/pjeth/IdeaProjects/tutorialsninja-sw-6/src/test/resources/features/desktopstest.feature:16)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And select sort by the position "Name: A to Z"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And select product 'Sony VAIO'</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the text 'Sony VAIO'</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And enter qty 1 using select class</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And click on 'Add to Cart' button</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the text "Success: You have added 'Sony VAIO' to your shopping cart!"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I click on link 'shopping cart' display into success message</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the text 'Shopping Cart'</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the Product name 'Sony VAIO'</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the Model 'Product 19'</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I can see the Total '£736.23'</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.tutorialsninja.steps.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>verify product arranged in alphabetical order
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded7.png' src="../screenshots/embedded7.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="113"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Laptops and Notebook page test cases</p>
+            <p class="text-sm">
+              <span>17:26:22</span> / <span>00:00:07:955</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Laptops and Notebook page test cases</h5>
+<span class='badge badge-success'>12.19.2023 17:26:22</span>
+<span class='badge badge-danger'>12.19.2023 17:26:30</span>
+<span class='badge badge-default'>00:00:07:955</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=113</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="114"><span class="badge log fail-bg mr-2">Fail</span>Verify that products price display High To Low successfully</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.tutorialsninja.steps.TopMenuSteps.iAmOnTheHomepage()">
+                <span>Given I am on the homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.steps.LaptopAndNotebooksSteps.iHoverOnLaptopsNotebooksTabAndClick()">
+                <span>And I hover on Laptops & Notebooks Tab and click</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.tutorialsninja.steps.LaptopAndNotebooksSteps.iClickOnShowAllLaptopsNotebooks()">
+                <span>And I click on “Show All Laptops & Notebooks”</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.ClassCastException: class jdk.proxy2.$Proxy28 cannot be cast to class org.openqa.selenium.By (jdk.proxy2.$Proxy28 is in module jdk.proxy2 of loader 'app'; org.openqa.selenium.By is in unnamed module of loader 'app')
+	at com.tutorialsninja.pages.HomePage.selectMenu(HomePage.java:58)
+	at com.tutorialsninja.steps.LaptopAndNotebooksSteps.iClickOnShowAllLaptopsNotebooks(LaptopAndNotebooksSteps.java:17)
+	at ✽.I click on “Show All Laptops & Notebooks”(file:///C:/Users/pjeth/IdeaProjects/tutorialsninja-sw-6/src/test/resources/features/laptopsandnotebookstest.feature:7)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.steps.LaptopAndNotebooksSteps.iSelectSortBy(java.lang.String)">
+                <span>And I select Sort By "Price (High > Low)"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then I can see the Product price will arrange in High to Low order.</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>com.tutorialsninja.steps.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>Verify that products price display High To Low successfully
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded8.png' src="../screenshots/embedded8.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="122"><span class="badge log fail-bg mr-2">Fail</span>Verify that user place order successfully</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.tutorialsninja.steps.TopMenuSteps.iAmOnTheHomepage()">
+                <span>Given I am on the homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.steps.LaptopAndNotebooksSteps.iHoverOnLaptopsNotebooksTabAndClick()">
+                <span>And I hover on Laptops & Notebooks Tab and click</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.tutorialsninja.steps.LaptopAndNotebooksSteps.iClickOnShowAllLaptopsNotebooks()">
+                <span>And I click on “Show All Laptops & Notebooks”</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.ClassCastException: class jdk.proxy2.$Proxy28 cannot be cast to class org.openqa.selenium.By (jdk.proxy2.$Proxy28 is in module jdk.proxy2 of loader 'app'; org.openqa.selenium.By is in unnamed module of loader 'app')
+	at com.tutorialsninja.pages.HomePage.selectMenu(HomePage.java:58)
+	at com.tutorialsninja.steps.LaptopAndNotebooksSteps.iClickOnShowAllLaptopsNotebooks(LaptopAndNotebooksSteps.java:17)
+	at ✽.I click on “Show All Laptops & Notebooks”(file:///C:/Users/pjeth/IdeaProjects/tutorialsninja-sw-6/src/test/resources/features/laptopsandnotebookstest.feature:15)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.steps.LaptopAndNotebooksSteps.iSelectSortBy(java.lang.String)">
+                <span>And I select Sort By "Price (High > Low)"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.steps.LaptopAndNotebooksSteps.iSelectProductMacBook()">
+                <span>And I select Product 'MacBook'</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.steps.TopMenuSteps.iCanSeeTheTextDesktops()">
+                <span>Then I can see the text 'MacBook'</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.steps.LaptopAndNotebooksSteps.iClickOnAddToCartButton()">
+                <span>And I click on ‘Add To Cart’ button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.steps.MyAccountsSteps.iCanSeeTheMessageYourAccountHasBeenCreated()">
+                <span>Then I can see the message 'Success: You have added MacBook to your shopping cart!'</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.steps.LaptopAndNotebooksSteps.iClickOnLinkShoppingCartDisplayedIntoSuccessMessage()">
+                <span>And I click on link 'shopping cart' displayed into success message</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then I can able to see the text "Shopping Cart"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.steps.LaptopAndNotebooksSteps.iCanAbleToSeeTheProductName(java.lang.String)">
+                <span>Then I can able to see the Product name "MacBook"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.steps.LaptopAndNotebooksSteps.iChangeQuantityTo(int)">
+                <span>And I change Quantity to 2</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.steps.LaptopAndNotebooksSteps.iClickOnUpdateTab()">
+                <span>And I click on 'Update' Tab</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.steps.MyAccountsSteps.iCanSeeTheMessageYourAccountHasBeenCreated()">
+                <span>Then I can see the message 'Success: You have modified your shopping cart!'</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.steps.LaptopAndNotebooksSteps.iCanSeeTheTotal£(int,int)">
+                <span>Then I can see the Total £737.45</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.steps.LaptopAndNotebooksSteps.iClickOnCheckoutButton()">
+                <span>And I click on 'Checkout' button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.steps.TopMenuSteps.iCanSeeTheTextDesktops()">
+                <span>Then I can see the text 'Checkout'</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.steps.LaptopAndNotebooksSteps.iCanSeeTheTextNewCustomer()">
+                <span>Then I can see the Text 'New Customer'</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.steps.LaptopAndNotebooksSteps.iClickOnGuestCheckoutRadioButton()">
+                <span>And I click on 'Guest Checkout' radio button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.steps.LaptopAndNotebooksSteps.iClickOnContinueTab()">
+                <span>And I click on 'Continue' tab</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.steps.LaptopAndNotebooksSteps.iFillTheMandatoryFields()">
+                <span>And I fill the mandatory fields</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.steps.LaptopAndNotebooksSteps.iClickOnContinueButton()">
+                <span>And I click on 'Continue' Button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.steps.LaptopAndNotebooksSteps.iAddCommentsAboutYourOrderIntoTextArea()">
+                <span>And I add Comments About your order into text area</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.steps.LaptopAndNotebooksSteps.iCheckTheTermsConditionsCheckBox()">
+                <span>And I check the Terms & Conditions check box</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.steps.LaptopAndNotebooksSteps.iClickOnCheckoutButton()">
+                <span>And I click on 'Continue' button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.steps.LaptopAndNotebooksSteps.iCanSeeTheMessageWarning()">
+                <span>Then I can see the message 'Warning</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>com.tutorialsninja.steps.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>Verify that user place order successfully
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded9.png' src="../screenshots/embedded9.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="151"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">User Accounts test cases</p>
+            <p class="text-sm">
+              <span>17:26:30</span> / <span>00:00:48:458</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">User Accounts test cases</h5>
+<span class='badge badge-success'>12.19.2023 17:26:30</span>
+<span class='badge badge-danger'>12.19.2023 17:27:18</span>
+<span class='badge badge-default'>00:00:48:458</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=151</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="152"><span class="badge log fail-bg mr-2">Fail</span>Verify user should navigate to register page successfully</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.tutorialsninja.steps.TopMenuSteps.iAmOnTheHomepage()">
+                <span>Given I am on the homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.steps.MyAccountsSteps.iClickOnMyAccountLink()">
+                <span>And I click on My Account link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.tutorialsninja.steps.MyAccountsSteps.callTheMethodSelectMyAccountOptionsMethodWithParameter(java.lang.String)">
+                <span>And call the method selectMyAccountOptions method with parameter "Register"</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.ClassCastException: class jdk.proxy2.$Proxy28 cannot be cast to class org.openqa.selenium.By (jdk.proxy2.$Proxy28 is in module jdk.proxy2 of loader 'app'; org.openqa.selenium.By is in unnamed module of loader 'app')
+	at com.tutorialsninja.utility.Utility.getListOfElements(Utility.java:143)
+	at com.tutorialsninja.pages.HomePage.selectMyAccountOptions(HomePage.java:98)
+	at com.tutorialsninja.steps.MyAccountsSteps.callTheMethodSelectMyAccountOptionsMethodWithParameter(MyAccountsSteps.java:17)
+	at ✽.call the method selectMyAccountOptions method with parameter "Register"(file:///C:/Users/pjeth/IdeaProjects/tutorialsninja-sw-6/src/test/resources/features/myaccounttest.feature:8)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.steps.TopMenuSteps.iCanSeeTheTextDesktops()">
+                <span>Then I can see the text 'Register Account'</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>com.tutorialsninja.steps.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>Verify user should navigate to register page successfully
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded10.png' src="../screenshots/embedded10.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="159"><span class="badge log fail-bg mr-2">Fail</span>Verify user should navigate to login page successfully</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.tutorialsninja.steps.TopMenuSteps.iAmOnTheHomepage()">
+                <span>Given I am on the homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.steps.MyAccountsSteps.iClickOnMyAccountLink()">
+                <span>And I click on My Account link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" >
+                <span>And I call the method selectMyAccountOptions method with parameter "Login"</span>
+      <div>Step undefined
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.steps.TopMenuSteps.iCanSeeTheTextDesktops()">
+                <span>Then I can see the text 'Returning Customer'</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="166"><span class="badge log fail-bg mr-2">Fail</span>Verify that user register account successfully</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.tutorialsninja.steps.TopMenuSteps.iAmOnTheHomepage()">
+                <span>Given I am on the homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.steps.MyAccountsSteps.iClickOnMyAccountLink()">
+                <span>And I click on My Account link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" >
+                <span>And I can call the method selectMyAccountOptions method with parameter "Register"</span>
+      <div>Step undefined
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.steps.MyAccountsSteps.iEnterFirstNameAndIEnterLastNameAndIEnterEmailAndIEnterTelephoneAndIEnterPasswordAndIEnterPasswordConfirmAndISelectSubscribeYesRadioButtonAndIClickOnPrivacyPolicyCheckBoxAndIClickOnContinueButton()">
+                <span>And I enter First Name and I enter Last Name and I enter Email and I enter Telephone and I enter Password and I enter Password Confirm and I select Subscribe Yes radio button and I click on Privacy Policy check box and I click on Continue button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.steps.MyAccountsSteps.iCanSeeTheMessageYourAccountHasBeenCreated()">
+                <span>Then I can see the message 'Your Account Has Been Created!'</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.steps.MyAccountsSteps.iClickOnContinueButton()">
+                <span>And I click on Continue button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.steps.MyAccountsSteps.iClickOnMyAccountsLink()">
+                <span>And I click on my Accounts Link.</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.steps.MyAccountsSteps.iCallTheMethodSelectMyAccountOptionsMethodAndPassTheParameterLogout()">
+                <span>And I call the method “selectMyAccountOptions” method and pass the parameter “Logout”</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.steps.TopMenuSteps.iCanSeeTheTextDesktops()">
+                <span>Then I can see the text 'Account Logout'</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.steps.MyAccountsSteps.iClickOnTheContinueButton()">
+                <span>And I click on the continue button</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="179"><span class="badge log fail-bg mr-2">Fail</span>Verify that user should Login and Logout successfully</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.tutorialsninja.steps.TopMenuSteps.iAmOnTheHomepage()">
+                <span>Given I am on the homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.steps.MyAccountsSteps.iClickOnMyAccountLink()">
+                <span>And I click on My Account link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.tutorialsninja.steps.MyAccountsSteps.iCanCallTheMethodSelectMyAccountOptionsMethodWithTheParameter(java.lang.String)">
+                <span>And I can call the method selectMyAccountOptions method with the parameter "Login"</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.ClassCastException: class jdk.proxy2.$Proxy28 cannot be cast to class org.openqa.selenium.By (jdk.proxy2.$Proxy28 is in module jdk.proxy2 of loader 'app'; org.openqa.selenium.By is in unnamed module of loader 'app')
+	at com.tutorialsninja.utility.Utility.getListOfElements(Utility.java:143)
+	at com.tutorialsninja.pages.HomePage.selectMyAccountOptions(HomePage.java:98)
+	at com.tutorialsninja.steps.MyAccountsSteps.iCanCallTheMethodSelectMyAccountOptionsMethodWithTheParameter(MyAccountsSteps.java:64)
+	at ✽.I can call the method selectMyAccountOptions method with the parameter "Login"(file:///C:/Users/pjeth/IdeaProjects/tutorialsninja-sw-6/src/test/resources/features/myaccounttest.feature:36)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.steps.MyAccountsSteps.iEnterEmailAddressAndAndIEnterPasswordAndIClickOnLoginButton()">
+                <span>And I enter Email address and and I enter Password and I click on Login button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.steps.MyAccountsSteps.iCanSeeTheTextMyAccount()">
+                <span>Then I can see the text “My Account”</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.steps.MyAccountsSteps.iClickOnTheMyAccountLink()">
+                <span>And I click on the My Account Link.</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.steps.MyAccountsSteps.iCallTheMethodSelectMyAccountOptionsMethodAndPassTheParameterLogout()">
+                <span>And I call the method “selectMyAccountOptions” method and pass the parameter “Logout”</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.steps.MyAccountsSteps.iCanSeeTextAccountLogout()">
+                <span>Then I can see text “Account Logout”</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.steps.MyAccountsSteps.iClickOnContinueButton()">
+                <span>And I click on Continue button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>com.tutorialsninja.steps.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>Verify that user should Login and Logout successfully
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded11.png' src="../screenshots/embedded11.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="191"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Verify user should navigate to the pages successfully</p>
+            <p class="text-sm">
+              <span>17:27:18</span> / <span>00:00:38:187</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Verify user should navigate to the pages successfully</h5>
+<span class='badge badge-success'>12.19.2023 17:27:18</span>
+<span class='badge badge-danger'>12.19.2023 17:27:56</span>
+<span class='badge badge-default'>00:00:38:187</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=191</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="192"><span class="badge log fail-bg mr-2">Fail</span>Verify user should navigate to desktops page successfully</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.tutorialsninja.steps.TopMenuSteps.iAmOnTheHomepage()">
+                <span>Given I am on the homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.steps.TopMenuSteps.iHoverOnTheDesktopsTabAndClick()">
+                <span>And I hover on the Desktops tab and click</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.tutorialsninja.steps.TopMenuSteps.callSelectMenuMethodAndPassTheMenu(java.lang.String)">
+                <span>And call selectMenu method and pass the menu "Show AllDesktops"</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.ClassCastException: class jdk.proxy2.$Proxy28 cannot be cast to class org.openqa.selenium.By (jdk.proxy2.$Proxy28 is in module jdk.proxy2 of loader 'app'; org.openqa.selenium.By is in unnamed module of loader 'app')
+	at com.tutorialsninja.pages.HomePage.selectMenu(HomePage.java:58)
+	at com.tutorialsninja.steps.TopMenuSteps.callSelectMenuMethodAndPassTheMenu(TopMenuSteps.java:24)
+	at ✽.call selectMenu method and pass the menu "Show AllDesktops"(file:///C:/Users/pjeth/IdeaProjects/tutorialsninja-sw-6/src/test/resources/features/topmenutest.feature:9)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.steps.TopMenuSteps.iCanSeeTheTextDesktops()">
+                <span>Then I can see the text 'Desktops'</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>com.tutorialsninja.steps.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>Verify user should navigate to desktops page successfully
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded12.png' src="../screenshots/embedded12.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="199"><span class="badge log fail-bg mr-2">Fail</span>Verify user should navigate to LaptopsAndNotebooks page successfully</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.tutorialsninja.steps.TopMenuSteps.iAmOnTheHomepage()">
+                <span>Given I am on the homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.steps.TopMenuSteps.iHoverOnTheLaptopsNotebooksTabAndClick()">
+                <span>And I hover on the Laptops & Notebooks tab and click</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.tutorialsninja.steps.TopMenuSteps.callSelectMenuMethodAndPassTheMenu(java.lang.String)">
+                <span>And call selectMenu method and pass the menu "Show AllLaptops & Notebooks"</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.ClassCastException: class jdk.proxy2.$Proxy28 cannot be cast to class org.openqa.selenium.By (jdk.proxy2.$Proxy28 is in module jdk.proxy2 of loader 'app'; org.openqa.selenium.By is in unnamed module of loader 'app')
+	at com.tutorialsninja.pages.HomePage.selectMenu(HomePage.java:58)
+	at com.tutorialsninja.steps.TopMenuSteps.callSelectMenuMethodAndPassTheMenu(TopMenuSteps.java:24)
+	at ✽.call selectMenu method and pass the menu "Show AllLaptops & Notebooks"(file:///C:/Users/pjeth/IdeaProjects/tutorialsninja-sw-6/src/test/resources/features/topmenutest.feature:17)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.steps.TopMenuSteps.iCanSeeTheTextDesktops()">
+                <span>Then I can see the text 'Laptops & Notebooks'</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>com.tutorialsninja.steps.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>Verify user should navigate to LaptopsAndNotebooks page successfully
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded13.png' src="../screenshots/embedded13.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="206"><span class="badge log fail-bg mr-2">Fail</span>Verify user should navigate to Components page successfully</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.tutorialsninja.steps.TopMenuSteps.iAmOnTheHomepage()">
+                <span>Given I am on the homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.steps.TopMenuSteps.iHoverOnTheComponentsTabAndClick()">
+                <span>And I hover on the Components tab and click</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.tutorialsninja.steps.TopMenuSteps.callSelectMenuMethodAndPassTheMenu(java.lang.String)">
+                <span>And call selectMenu method and pass the menu "Show AllComponents"</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.ClassCastException: class jdk.proxy2.$Proxy28 cannot be cast to class org.openqa.selenium.By (jdk.proxy2.$Proxy28 is in module jdk.proxy2 of loader 'app'; org.openqa.selenium.By is in unnamed module of loader 'app')
+	at com.tutorialsninja.pages.HomePage.selectMenu(HomePage.java:58)
+	at com.tutorialsninja.steps.TopMenuSteps.callSelectMenuMethodAndPassTheMenu(TopMenuSteps.java:24)
+	at ✽.call selectMenu method and pass the menu "Show AllComponents"(file:///C:/Users/pjeth/IdeaProjects/tutorialsninja-sw-6/src/test/resources/features/topmenutest.feature:25)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.steps.TopMenuSteps.iCanSeeTheTextComponents()">
+                <span>Then I can see the text 'Components</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>com.tutorialsninja.steps.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>Verify user should navigate to Components page successfully
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded14.png' src="../screenshots/embedded14.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">4</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>12</span>
+</span>
+<p class="name">@regression</p>
+<p class="duration text-sm">12 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@regression</h4>
+<span status="fail" class='badge log badge-danger'>12 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:25:18 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='11'>verify product arranged in alphabetical order</a>
+<div class="">
+<span class="badge badge-default">Desktop page test cases.verify product arranged in alphabetical order</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:25:35 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='28'>verify product arranged in alphabetical order</a>
+<div class="">
+<span class="badge badge-default">Desktop page test cases.verify product arranged in alphabetical order</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:25:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='45'>verify product arranged in alphabetical order</a>
+<div class="">
+<span class="badge badge-default">Desktop page test cases.verify product arranged in alphabetical order</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:26:00 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='62'>verify product arranged in alphabetical order</a>
+<div class="">
+<span class="badge badge-default">Desktop page test cases.verify product arranged in alphabetical order</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:26:04 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='79'>verify product arranged in alphabetical order</a>
+<div class="">
+<span class="badge badge-default">Desktop page test cases.verify product arranged in alphabetical order</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:26:18 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='96'>verify product arranged in alphabetical order</a>
+<div class="">
+<span class="badge badge-default">Desktop page test cases.verify product arranged in alphabetical order</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:26:26 pm</td>
+<td>
+<a href="#" class="linked" test-id='113' id='122'>Verify that user place order successfully</a>
+<div class="">
+<span class="badge badge-default">Laptops and Notebook page test cases.Verify that user place order successfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:26:48 pm</td>
+<td>
+<a href="#" class="linked" test-id='151' id='159'>Verify user should navigate to login page successfully</a>
+<div class="">
+<span class="badge badge-default">User Accounts test cases.Verify user should navigate to login page successfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:26:52 pm</td>
+<td>
+<a href="#" class="linked" test-id='151' id='166'>Verify that user register account successfully</a>
+<div class="">
+<span class="badge badge-default">User Accounts test cases.Verify that user register account successfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:27:14 pm</td>
+<td>
+<a href="#" class="linked" test-id='151' id='179'>Verify that user should Login and Logout successfully</a>
+<div class="">
+<span class="badge badge-default">User Accounts test cases.Verify that user should Login and Logout successfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:27:32 pm</td>
+<td>
+<a href="#" class="linked" test-id='191' id='199'>Verify user should navigate to LaptopsAndNotebooks page successfully</a>
+<div class="">
+<span class="badge badge-default">Verify user should navigate to the pages successfully.Verify user should navigate to LaptopsAndNotebooks page successfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:27:52 pm</td>
+<td>
+<a href="#" class="linked" test-id='191' id='206'>Verify user should navigate to Components page successfully</a>
+<div class="">
+<span class="badge badge-default">Verify user should navigate to the pages successfully.Verify user should navigate to Components page successfully</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>16</span>
+</span>
+<p class="name">@smoke</p>
+<p class="duration text-sm">16 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@smoke</h4>
+<span status="fail" class='badge log badge-danger'>16 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:25:13 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>verify product arranged in alphabetical order</a>
+<div class="">
+<span class="badge badge-default">Desktop page test cases.verify product arranged in alphabetical order</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:25:18 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='11'>verify product arranged in alphabetical order</a>
+<div class="">
+<span class="badge badge-default">Desktop page test cases.verify product arranged in alphabetical order</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:25:35 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='28'>verify product arranged in alphabetical order</a>
+<div class="">
+<span class="badge badge-default">Desktop page test cases.verify product arranged in alphabetical order</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:25:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='45'>verify product arranged in alphabetical order</a>
+<div class="">
+<span class="badge badge-default">Desktop page test cases.verify product arranged in alphabetical order</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:26:00 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='62'>verify product arranged in alphabetical order</a>
+<div class="">
+<span class="badge badge-default">Desktop page test cases.verify product arranged in alphabetical order</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:26:04 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='79'>verify product arranged in alphabetical order</a>
+<div class="">
+<span class="badge badge-default">Desktop page test cases.verify product arranged in alphabetical order</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:26:18 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='96'>verify product arranged in alphabetical order</a>
+<div class="">
+<span class="badge badge-default">Desktop page test cases.verify product arranged in alphabetical order</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:26:22 pm</td>
+<td>
+<a href="#" class="linked" test-id='113' id='114'>Verify that products price display High To Low successfully</a>
+<div class="">
+<span class="badge badge-default">Laptops and Notebook page test cases.Verify that products price display High To Low successfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:26:26 pm</td>
+<td>
+<a href="#" class="linked" test-id='113' id='122'>Verify that user place order successfully</a>
+<div class="">
+<span class="badge badge-default">Laptops and Notebook page test cases.Verify that user place order successfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:26:30 pm</td>
+<td>
+<a href="#" class="linked" test-id='151' id='152'>Verify user should navigate to register page successfully</a>
+<div class="">
+<span class="badge badge-default">User Accounts test cases.Verify user should navigate to register page successfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:26:48 pm</td>
+<td>
+<a href="#" class="linked" test-id='151' id='159'>Verify user should navigate to login page successfully</a>
+<div class="">
+<span class="badge badge-default">User Accounts test cases.Verify user should navigate to login page successfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:26:52 pm</td>
+<td>
+<a href="#" class="linked" test-id='151' id='166'>Verify that user register account successfully</a>
+<div class="">
+<span class="badge badge-default">User Accounts test cases.Verify that user register account successfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:27:14 pm</td>
+<td>
+<a href="#" class="linked" test-id='151' id='179'>Verify that user should Login and Logout successfully</a>
+<div class="">
+<span class="badge badge-default">User Accounts test cases.Verify that user should Login and Logout successfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:27:18 pm</td>
+<td>
+<a href="#" class="linked" test-id='191' id='192'>Verify user should navigate to desktops page successfully</a>
+<div class="">
+<span class="badge badge-default">Verify user should navigate to the pages successfully.Verify user should navigate to desktops page successfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:27:32 pm</td>
+<td>
+<a href="#" class="linked" test-id='191' id='199'>Verify user should navigate to LaptopsAndNotebooks page successfully</a>
+<div class="">
+<span class="badge badge-default">Verify user should navigate to the pages successfully.Verify user should navigate to LaptopsAndNotebooks page successfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:27:52 pm</td>
+<td>
+<a href="#" class="linked" test-id='191' id='206'>Verify user should navigate to Components page successfully</a>
+<div class="">
+<span class="badge badge-default">Verify user should navigate to the pages successfully.Verify user should navigate to Components page successfully</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>16</span>
+</span>
+<p class="name">@author-Priya</p>
+<p class="duration text-sm">16 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@author-Priya</h4>
+<span status="fail" class='badge log badge-danger'>16 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:25:13 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>verify product arranged in alphabetical order</a>
+<div class="">
+<span class="badge badge-default">Desktop page test cases.verify product arranged in alphabetical order</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:25:18 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='11'>verify product arranged in alphabetical order</a>
+<div class="">
+<span class="badge badge-default">Desktop page test cases.verify product arranged in alphabetical order</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:25:35 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='28'>verify product arranged in alphabetical order</a>
+<div class="">
+<span class="badge badge-default">Desktop page test cases.verify product arranged in alphabetical order</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:25:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='45'>verify product arranged in alphabetical order</a>
+<div class="">
+<span class="badge badge-default">Desktop page test cases.verify product arranged in alphabetical order</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:26:00 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='62'>verify product arranged in alphabetical order</a>
+<div class="">
+<span class="badge badge-default">Desktop page test cases.verify product arranged in alphabetical order</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:26:04 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='79'>verify product arranged in alphabetical order</a>
+<div class="">
+<span class="badge badge-default">Desktop page test cases.verify product arranged in alphabetical order</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:26:18 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='96'>verify product arranged in alphabetical order</a>
+<div class="">
+<span class="badge badge-default">Desktop page test cases.verify product arranged in alphabetical order</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:26:22 pm</td>
+<td>
+<a href="#" class="linked" test-id='113' id='114'>Verify that products price display High To Low successfully</a>
+<div class="">
+<span class="badge badge-default">Laptops and Notebook page test cases.Verify that products price display High To Low successfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:26:26 pm</td>
+<td>
+<a href="#" class="linked" test-id='113' id='122'>Verify that user place order successfully</a>
+<div class="">
+<span class="badge badge-default">Laptops and Notebook page test cases.Verify that user place order successfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:26:30 pm</td>
+<td>
+<a href="#" class="linked" test-id='151' id='152'>Verify user should navigate to register page successfully</a>
+<div class="">
+<span class="badge badge-default">User Accounts test cases.Verify user should navigate to register page successfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:26:48 pm</td>
+<td>
+<a href="#" class="linked" test-id='151' id='159'>Verify user should navigate to login page successfully</a>
+<div class="">
+<span class="badge badge-default">User Accounts test cases.Verify user should navigate to login page successfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:26:52 pm</td>
+<td>
+<a href="#" class="linked" test-id='151' id='166'>Verify that user register account successfully</a>
+<div class="">
+<span class="badge badge-default">User Accounts test cases.Verify that user register account successfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:27:14 pm</td>
+<td>
+<a href="#" class="linked" test-id='151' id='179'>Verify that user should Login and Logout successfully</a>
+<div class="">
+<span class="badge badge-default">User Accounts test cases.Verify that user should Login and Logout successfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:27:18 pm</td>
+<td>
+<a href="#" class="linked" test-id='191' id='192'>Verify user should navigate to desktops page successfully</a>
+<div class="">
+<span class="badge badge-default">Verify user should navigate to the pages successfully.Verify user should navigate to desktops page successfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:27:32 pm</td>
+<td>
+<a href="#" class="linked" test-id='191' id='199'>Verify user should navigate to LaptopsAndNotebooks page successfully</a>
+<div class="">
+<span class="badge badge-default">Verify user should navigate to the pages successfully.Verify user should navigate to LaptopsAndNotebooks page successfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:27:52 pm</td>
+<td>
+<a href="#" class="linked" test-id='191' id='206'>Verify user should navigate to Components page successfully</a>
+<div class="">
+<span class="badge badge-default">Verify user should navigate to the pages successfully.Verify user should navigate to Components page successfully</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>12</span>
+</span>
+<p class="name">@sanity</p>
+<p class="duration text-sm">12 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@sanity</h4>
+<span status="fail" class='badge log badge-danger'>12 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:25:18 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='11'>verify product arranged in alphabetical order</a>
+<div class="">
+<span class="badge badge-default">Desktop page test cases.verify product arranged in alphabetical order</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:25:35 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='28'>verify product arranged in alphabetical order</a>
+<div class="">
+<span class="badge badge-default">Desktop page test cases.verify product arranged in alphabetical order</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:25:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='45'>verify product arranged in alphabetical order</a>
+<div class="">
+<span class="badge badge-default">Desktop page test cases.verify product arranged in alphabetical order</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:26:00 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='62'>verify product arranged in alphabetical order</a>
+<div class="">
+<span class="badge badge-default">Desktop page test cases.verify product arranged in alphabetical order</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:26:04 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='79'>verify product arranged in alphabetical order</a>
+<div class="">
+<span class="badge badge-default">Desktop page test cases.verify product arranged in alphabetical order</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:26:18 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='96'>verify product arranged in alphabetical order</a>
+<div class="">
+<span class="badge badge-default">Desktop page test cases.verify product arranged in alphabetical order</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:26:26 pm</td>
+<td>
+<a href="#" class="linked" test-id='113' id='122'>Verify that user place order successfully</a>
+<div class="">
+<span class="badge badge-default">Laptops and Notebook page test cases.Verify that user place order successfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:26:48 pm</td>
+<td>
+<a href="#" class="linked" test-id='151' id='159'>Verify user should navigate to login page successfully</a>
+<div class="">
+<span class="badge badge-default">User Accounts test cases.Verify user should navigate to login page successfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:26:52 pm</td>
+<td>
+<a href="#" class="linked" test-id='151' id='166'>Verify that user register account successfully</a>
+<div class="">
+<span class="badge badge-default">User Accounts test cases.Verify that user register account successfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:27:14 pm</td>
+<td>
+<a href="#" class="linked" test-id='151' id='179'>Verify that user should Login and Logout successfully</a>
+<div class="">
+<span class="badge badge-default">User Accounts test cases.Verify that user should Login and Logout successfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:27:32 pm</td>
+<td>
+<a href="#" class="linked" test-id='191' id='199'>Verify user should navigate to LaptopsAndNotebooks page successfully</a>
+<div class="">
+<span class="badge badge-default">Verify user should navigate to the pages successfully.Verify user should navigate to LaptopsAndNotebooks page successfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:27:52 pm</td>
+<td>
+<a href="#" class="linked" test-id='191' id='206'>Verify user should navigate to Components page successfully</a>
+<div class="">
+<span class="badge badge-default">Verify user should navigate to the pages successfully.Verify user should navigate to Components page successfully</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>14</span>
+</span>
+<p class="name">java.lang.ClassCastException</p>
+<p class="duration text-sm">14 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.ClassCastException</h4>
+<span status="fail" class='badge log badge-danger'>14 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:25:18 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='6'>And click on "Show AllDesktops"</a>
+<div class="">
+<span class="badge badge-default">Desktop page test cases.verify product arranged in alphabetical order.And click on "Show AllDesktops"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:25:34 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='15'>And click on "Show AllDesktops"</a>
+<div class="">
+<span class="badge badge-default">Desktop page test cases.verify product arranged in alphabetical order.And click on "Show AllDesktops"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:25:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='32'>And click on "Show AllDesktops"</a>
+<div class="">
+<span class="badge badge-default">Desktop page test cases.verify product arranged in alphabetical order.And click on "Show AllDesktops"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:25:59 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='49'>And click on "Show AllDesktops"</a>
+<div class="">
+<span class="badge badge-default">Desktop page test cases.verify product arranged in alphabetical order.And click on "Show AllDesktops"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:26:03 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='66'>And click on "Show AllDesktops"</a>
+<div class="">
+<span class="badge badge-default">Desktop page test cases.verify product arranged in alphabetical order.And click on "Show AllDesktops"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:26:17 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='83'>And click on "Show AllDesktops"</a>
+<div class="">
+<span class="badge badge-default">Desktop page test cases.verify product arranged in alphabetical order.And click on "Show AllDesktops"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:26:22 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='100'>And click on "Show AllDesktops"</a>
+<div class="">
+<span class="badge badge-default">Desktop page test cases.verify product arranged in alphabetical order.And click on "Show AllDesktops"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:26:26 pm</td>
+<td>
+<a href="#" class="linked" test-id='113' id='118'>And I click on “Show All Laptops & Notebooks”</a>
+<div class="">
+<span class="badge badge-default">Laptops and Notebook page test cases.Verify that products price display High To Low successfully.And I click on “Show All Laptops & Notebooks”</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:26:30 pm</td>
+<td>
+<a href="#" class="linked" test-id='113' id='126'>And I click on “Show All Laptops & Notebooks”</a>
+<div class="">
+<span class="badge badge-default">Laptops and Notebook page test cases.Verify that user place order successfully.And I click on “Show All Laptops & Notebooks”</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:26:47 pm</td>
+<td>
+<a href="#" class="linked" test-id='151' id='156'>And call the method selectMyAccountOptions method with parameter "Register"</a>
+<div class="">
+<span class="badge badge-default">User Accounts test cases.Verify user should navigate to register page successfully.And call the method selectMyAccountOptions method with parameter "Register"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:27:18 pm</td>
+<td>
+<a href="#" class="linked" test-id='151' id='183'>And I can call the method selectMyAccountOptions method with the parameter "Login"</a>
+<div class="">
+<span class="badge badge-default">User Accounts test cases.Verify that user should Login and Logout successfully.And I can call the method selectMyAccountOptions method with the parameter "Login"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:27:32 pm</td>
+<td>
+<a href="#" class="linked" test-id='191' id='196'>And call selectMenu method and pass the menu "Show AllDesktops"</a>
+<div class="">
+<span class="badge badge-default">Verify user should navigate to the pages successfully.Verify user should navigate to desktops page successfully.And call selectMenu method and pass the menu "Show AllDesktops"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:27:52 pm</td>
+<td>
+<a href="#" class="linked" test-id='191' id='203'>And call selectMenu method and pass the menu "Show AllLaptops & Notebooks"</a>
+<div class="">
+<span class="badge badge-default">Verify user should navigate to the pages successfully.Verify user should navigate to LaptopsAndNotebooks page successfully.And call selectMenu method and pass the menu "Show AllLaptops & Notebooks"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:27:56 pm</td>
+<td>
+<a href="#" class="linked" test-id='191' id='210'>And call selectMenu method and pass the menu "Show AllComponents"</a>
+<div class="">
+<span class="badge badge-default">Verify user should navigate to the pages successfully.Verify user should navigate to Components page successfully.And call selectMenu method and pass the menu "Show AllComponents"</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
